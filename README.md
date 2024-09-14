@@ -28,7 +28,11 @@ Kafka installation is a little bit tricky, follow [these steps](https://medium.c
 
 ### Init kafka-console-consumer
 1. Open CMD
-2. Run `kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <topic name> --from-beginning`. For example --topic click-events
+2. Run 
+```
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <topic name> --from-beginning
+```
+**For example**: --topic click-events
 
 ## Demonstration
 Local test using a REST client sending a pair of strings to a specific topic as a producer and Kafka-Console as consumer.
